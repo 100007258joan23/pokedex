@@ -1,0 +1,87 @@
+
+
+
+
+/*-----------------------------------tipo_centrado-------------------------------------------*/
+
+.tiposde {
+    display: flex;
+    align-items: center; /* centra verticalmente */
+}
+
+.tiposde img {
+    margin-left: 14px; /* espacio entre texto e imagen */
+}
+
+
+
+/*----------------------------------centrado de pokemons-----------------------------------*/
+
+.centro {
+    text-align: center;
+}
+
+
+.imagenes-laterales {
+    display: flex;
+    justify-content: center; /* Los pone juntos en el centro */
+    gap: 80px;              /* Ajusta la separación entre imágenes */
+    padding: 20px;
+}
+
+.nombre {
+    text-align: center;     /* Centra el nombre debajo de la imagen */
+}
+
+
+
+
+
+/*----------------------------------derecha-------------------------------------------*/
+.derecha {
+    display: flex;
+    align-items: flex-end; /* Centra verticalmente imagen y texto */
+    gap: 20px;             /* Espacio entre imagen y texto */
+}
+
+/*--------------------------------bordes-------------------------------------------*/
+.nombre {
+    box-shadow: 0 0 15px #fbfbfb; /* brillo alrededor */
+    border-radius: 10px;
+}
+
+------------------------------------------
+.hr {
+    border: none;
+    border-top: 2px solid rgb(0, 0, 0);
+    width: 100%;
+}   
+
+
+/*----------------flechas-----------------*/
+.flecha {
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------------------------carta-----------------------------------------*/
+.carta {
+    margin-left: auto; /* empuja la PRIMERA carta hacia la derecha */
+}
+
+/* Evita que la segunda carta también se vaya al borde */
+.carta:last-child {
+    margin-left: 0;
+    margin-right: 40px; /* separación del borde derecho */
+}
+
+
+/*------------------------volver---------------------------*/
+.volver {
+    font-size: 24px;   /* tamaño de letra */
+    font-weight: bold; /* opcional, para que destaque */
+    color: #c10202;       /* cambia el color si quieres */
+    text-decoration: none; /* quita el subrayado si no lo quieres */
+}
